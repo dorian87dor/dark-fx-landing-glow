@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Apple, Smartphone, Computer, Globe } from 'lucide-react';
 
@@ -28,7 +27,6 @@ const appPlatforms = [
 const Hero = () => {
   return (
     <section className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
-      {/* NEW BG IMAGE - overlay for readability */}
       <div className="absolute top-0 left-0 right-0 w-full h-full overflow-hidden -z-10">
         <img
           src="/lovable-uploads/36e39cfd-1b3f-4fc8-926c-35861bf2d21f.png"
@@ -67,7 +65,6 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:col-span-6 z-10 flex items-center justify-center">
-            {/* Device image */}
             <div className="relative w-full max-w-lg rounded-2xl overflow-hidden shadow-xl border border-accent/10 bg-dark-400">
               <img
                 src="/lovable-uploads/36e39cfd-1b3f-4fc8-926c-35861bf2d21f.png"
@@ -78,7 +75,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* New: App Download Buttons */}
         <div className="w-full flex flex-wrap justify-center gap-4 mt-12">
           {appPlatforms.map((platform) => (
             <a
@@ -90,9 +86,8 @@ const Hero = () => {
               }
               style={{
                 background:
-                  // Gradient inspired by logo: teal/green-blue
-                  "linear-gradient(90deg, #36d6b0 0%, #1eaedb 100%)",
-                boxShadow: "0 2px 16px 0 rgba(54,214,176,0.18)",
+                  "linear-gradient(90deg, #9b87f5 0%, #D946EF 100%)",
+                boxShadow: "0 2px 16px 0 rgba(155,135,245,0.18)",
               }}
             >
               {platform.icon}
@@ -106,4 +101,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
