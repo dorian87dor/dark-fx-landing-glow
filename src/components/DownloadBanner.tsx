@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Smartphone, Computer, Globe, Apple, Android } from "lucide-react";
+import { Smartphone, Computer, Globe, Apple } from "lucide-react";
 
 const platforms = [
   {
@@ -11,7 +11,8 @@ const platforms = [
   },
   {
     label: "Android",
-    icon: <Android size={22} className="text-white" />,
+    // Use Smartphone icon as a substitute for Android
+    icon: <Smartphone size={22} className="text-white" />,
     color: "bg-android text-white hover:bg-android/90",
     href: "#"
   },
@@ -52,3 +53,4 @@ const DownloadBanner = () => (
 );
 
 export default DownloadBanner;
+
