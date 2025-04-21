@@ -1,6 +1,29 @@
 
 import React from 'react';
-import { ArrowRight, ArrowUpRight, TrendingUp, Layers, Activity, Settings } from 'lucide-react';
+import { Apple, Smartphone, Computer, Globe } from 'lucide-react';
+
+const appPlatforms = [
+  {
+    label: "App Store",
+    icon: <Apple size={22} />,
+    href: "#",
+  },
+  {
+    label: "Google Play",
+    icon: <Smartphone size={22} />,
+    href: "#",
+  },
+  {
+    label: "Desktop Version",
+    icon: <Computer size={22} />,
+    href: "#",
+  },
+  {
+    label: "Web App",
+    icon: <Globe size={22} />,
+    href: "#",
+  },
+];
 
 const Hero = () => {
   return (
@@ -55,9 +78,32 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* New: App Download Buttons */}
+        <div className="w-full flex flex-wrap justify-center gap-4 mt-12">
+          {appPlatforms.map((platform) => (
+            <a
+              key={platform.label}
+              href={platform.href}
+              className={
+                "flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-white text-base shadow-lg transition-all " +
+                "hover:scale-105"
+              }
+              style={{
+                background:
+                  // Gradient inspired by logo: teal/green-blue
+                  "linear-gradient(90deg, #36d6b0 0%, #1eaedb 100%)",
+                boxShadow: "0 2px 16px 0 rgba(54,214,176,0.18)",
+              }}
+            >
+              {platform.icon}
+              <span>{platform.label}</span>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default Hero;
+
