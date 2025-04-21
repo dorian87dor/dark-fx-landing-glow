@@ -1,29 +1,29 @@
 
 import React from "react";
-import { Smartphone, Laptop, Web, Desktop } from "lucide-react";
+import { Smartphone, Computer, Globe, Apple, Android } from "lucide-react";
 
 const platforms = [
   {
     label: "iOS",
-    icon: <Smartphone size={22} className="text-black" />,
+    icon: <Apple size={22} className="text-black" />,
     color: "bg-white text-black hover:bg-gray-100",
     href: "#"
   },
   {
     label: "Android",
-    icon: <Smartphone size={22} className="text-white" />,
+    icon: <Android size={22} className="text-white" />,
     color: "bg-android text-white hover:bg-android/90",
     href: "#"
   },
   {
     label: "Web",
-    icon: <Web size={22} className="text-white" />,
+    icon: <Globe size={22} className="text-white" />,
     color: "bg-web text-white hover:bg-web/90",
     href: "#"
   },
   {
     label: "Desktop",
-    icon: <Laptop size={22} className="text-black" />,
+    icon: <Computer size={22} className="text-black" />,
     color: "bg-desktop text-black hover:bg-gray-300",
     href: "#"
   }
