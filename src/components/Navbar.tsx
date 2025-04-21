@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +14,8 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-white mr-8">
-            <span className="glow-text-blue">FX</span>Trade
+            <span className="glow-text-blue">Tradelocker</span>
           </a>
-          
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-1">
             <div className="relative group">
@@ -36,15 +34,7 @@ const Navbar = () => {
             <a href="#testimonials" className="px-4 py-2 text-white/80 hover:text-white rounded-md transition-all">Testimonials</a>
           </div>
         </div>
-        
-        {/* Desktop CTA */}
-        <div className="hidden md:flex items-center space-x-4">
-          <a href="#" className="text-white/80 hover:text-white transition-all">Sign In</a>
-          <Button className="bg-gradient-to-r from-glow-blue to-glow-teal text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-300">
-            Open Account
-          </Button>
-        </div>
-        
+        {/* Desktop CTA - removed account features */}
         {/* Mobile Menu Button */}
         <button 
           className="md:hidden text-white" 
@@ -62,12 +52,6 @@ const Navbar = () => {
             <a href="#features" className="py-2">Features</a>
             <a href="#markets" className="py-2">Markets</a>
             <a href="#testimonials" className="py-2">Testimonials</a>
-            <div className="pt-4 flex flex-col space-y-2">
-              <a href="#" className="py-2">Sign In</a>
-              <Button className="bg-gradient-to-r from-glow-blue to-glow-teal text-white">
-                Open Account
-              </Button>
-            </div>
           </div>
         </div>
       )}

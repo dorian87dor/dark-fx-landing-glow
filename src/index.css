@@ -5,34 +5,25 @@
 
 @layer base {
   :root {
-    --background: 225 30% 10%;
-    --foreground: 210 40% 98%;
-
-    --card: 228 28% 13%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 228 28% 13%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 199 100% 65%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 226 30% 20%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 226 30% 20%;
-    --muted-foreground: 215 20.2% 75.1%;
-
-    --accent: 226 30% 20%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 226 30% 20%;
-    --input: 226 30% 20%;
-    --ring: 212.7 26.8% 83.9%;
-
+    --background: 220 24% 6%;         /* #0d111a */
+    --foreground: 198 81% 85%;        /* #eaf1fe */
+    --card: 222 20% 12%;              /* #181e25 */
+    --card-foreground: 198 81% 85%;
+    --popover: 222 20% 12%;
+    --popover-foreground: 198 81% 85%;
+    --primary: 220 24% 6%;            /* #0d111a */
+    --primary-foreground: 164 68% 53%;/* #36d6b0 */
+    --secondary: 226 20% 14%;         /* #1a1f2c */
+    --secondary-foreground: 198 81% 85%;
+    --muted: 225 16% 22%;             /* #465068 */
+    --muted-foreground: 198 26% 70%;  /* muted gray */
+    --accent: 164 68% 53%;            /* #36d6b0 */
+    --accent-foreground: 220 24% 6%;
+    --destructive: 0 70% 56%;         /* #ea384c (red) */
+    --destructive-foreground: 198 81% 85%;
+    --border: 225 12% 17%;            /* #252833 */
+    --input: 225 12% 17%;
+    --ring: 198 81% 85%;
     --radius: 0.5rem;
   }
 }
@@ -47,8 +38,8 @@
   }
   
   body {
-    @apply bg-dark-300 text-foreground antialiased;
-    background: linear-gradient(180deg, #121826, #0D111A);
+    @apply bg-primary text-foreground antialiased;
+    background: linear-gradient(180deg, #0d111a, #1a1f2c 80%);
     min-height: 100vh;
   }
 
@@ -61,26 +52,21 @@
   .glass {
     @apply backdrop-blur-md bg-white/5 border border-white/10;
   }
-  
   .glow-text-blue {
     @apply text-glow-blue;
     text-shadow: 0 0 10px rgba(74, 170, 254, 0.5);
   }
-  
   .glow-text-teal {
     @apply text-glow-teal;
     text-shadow: 0 0 10px rgba(54, 214, 176, 0.5);
   }
-  
   .glow-border {
     box-shadow: 0 0 5px rgba(74, 170, 254, 0.5);
   }
-  
   .chart-grid {
     stroke: rgba(255, 255, 255, 0.1);
     stroke-width: 1;
   }
-  
   .chart-tooltip {
     @apply bg-dark-100 p-2 rounded border border-glow-blue/20;
   }

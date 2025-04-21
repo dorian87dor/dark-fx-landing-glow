@@ -30,55 +30,39 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#0d111a',
+					foreground: '#36d6b0'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				},
-				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: '#1a1f2c',
+					foreground: '#eaf1fe'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
-				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: '#36d6b0',
+					foreground: '#0d111a'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: '#181e25',
+					foreground: '#eaf1fe'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Forex theme colors
 				dark: {
-					100: '#2A3148',
-					200: '#1A1F2C',
-					300: '#121826',
-					400: '#0D111A',
+					100: '#22262f',
+					200: '#1a1f2c',
+					300: '#13171f',
+					400: '#0d111a',
 				},
+				graytrade: {
+					100: '#465068',
+					200: '#252833',
+				},
+				// For download buttons
+				iodark: "#fff",
+				android: "#28c445",
+				web: "#2ca7e1",
+				desktop: "#b7bbc1",
 				glow: {
 					blue: '#4AAAFE',
-					teal: '#36D6B0',
-					purple: '#A36FFE',
-					pink: '#FE6E86',
+					teal: '#36d6b0',
 				},
 			},
 			borderRadius: {
@@ -99,22 +83,11 @@ export default {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' },
 				},
-				'pulse-glow': {
-					'0%, 100%': { opacity: '0.6' },
-					'50%': { opacity: '1' },
-				},
-				'gradient-shift': {
-					'0%': { backgroundPosition: '0% 50%' },
-					'50%': { backgroundPosition: '100% 50%' },
-					'100%': { backgroundPosition: '0% 50%' },
-				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
-				'gradient-shift': 'gradient-shift 8s ease infinite',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
